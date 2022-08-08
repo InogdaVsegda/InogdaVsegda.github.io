@@ -1,0 +1,13 @@
+.postlist {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+.postlist__title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+  

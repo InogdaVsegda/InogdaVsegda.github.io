@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+*:focus, :checked, :target {
+  outline: none;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+
+.post {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid rgb(236, 236, 236);
+    background-color: white;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.post__btns {
+  display: flex;
+  justify-content: left;
+}
+
+.post__btns > button {
+  margin-right: 10px;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+  }
+  .post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+  }
+  .post-exit {
+    opacity: 1;
+  }
+  .post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  }
+
+.page__wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: white;
+  cursor: pointer;
+}
+
+.page__current {
+  font-weight: bold;
+}
+

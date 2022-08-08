@@ -1,0 +1,21 @@
+.MySelect {
+    margin-right: 10px;
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+/* .MySelect:focus > option:hover { 
+    background: rgb(224, 224, 224) !important;
+} */
+
+.MySelect.decorated option:hover {
+    box-shadow: 0 0 10px 100px rgb(224, 224, 224) inset;
+}
